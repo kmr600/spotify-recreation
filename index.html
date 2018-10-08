@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Spotify - Web Dev Challenge #7</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="/reset.css">
+	<link rel="stylesheet" href="/main.css">
+</head>
+<body>
+	<div class="content-container">
+		<header>
+			<nav>
+				<div id="profile-icon">
+					<i class="far fa-user"></i>
+				</div>
+				
+				<h2>Your Library</h2>
+				
+				<div id="settings-icon">
+					<i class="fas fa-cog"></i>
+				</div>
+			</nav>
+			
+		</header>
+		
+		<main>
+			<section id="library-tabs">
+				<nav>
+					<div class="tab">
+						<i id="library-icon" class="far fa-sun"></i>
+						<p class="tab-title">Your Daily Mix</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-music"></i>
+						<p class="tab-title">Playlists</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-broadcast-tower"></i>
+						<p class="tab-title">Stations</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-music"></i>
+						<p class="tab-title">Songs</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-compact-disc"></i>
+						<p class="tab-title">Albums</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-users"></i>
+						<p class="tab-title">Artists</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-microphone-alt"></i>
+						<p class="tab-title">Podcasts</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+					<div class="tab">
+						<i id="library-icon" class="fas fa-video"></i>
+						<p class="tab-title">Videos</p>	
+						<i id="arrow-icon" class="fas fa-chevron-right"></i>						
+					</div>
+				</nav>
+			</section>
+			
+			<section id="recently-played">
+				<div class="title-row">
+					<h3>Recently Played</h3>
+					<p>Edit</p>
+				</div>
+				
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/a55912da6dd0f63a6b506b70510a83999353730e" alt="Songs About Jane">
+					</div>
+					<div class="credits">
+						<h5 class="title">Songs About Jane</h5>
+						<h6 class="artist">Album &middot; by Maroon 5</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/69c5c546289cead3c93a421dff4f7708f7c4eff5" alt="Doris">
+					</div>
+					<div class="credits">
+						<h5 class="title">Doris</h5>
+						<h6 class="artist">Album &middot; by Earl Sweatshirt</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/717290460ec646ffa372c7f483835eaacfea34f7" alt="Coloring Book">
+					</div>
+					<div class="credits">
+						<h5 class="title">Coloring Book</h5>
+						<h6 class="artist">Album &middot; by Chance The Rapper</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/05cf2f8b56e595bcbf50fccb894f5fb6c2427750" alt="ye">
+					</div>
+					<div class="credits">
+						<h5 class="title">ye</h5>
+						<h6 class="artist">Album &middot; by Kanye West</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/7ab4395b77a2ef6b6f202ff0a98d8180937e924a" alt="TESTING">
+					</div>
+					<div class="credits">
+						<h5 class="title">TESTING</h5>
+						<h6 class="artist">Album &middot; by A$AP Rocky</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/03d4fc7b3df5aa9dded70438699f250e4301bf62" alt="Die Lit">
+					</div>
+					<div class="credits">
+						<h5 class="title">Die Lit</h5>
+						<h6 class="artist">Album &middot; by Playboi Carti</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/5e49036d2121a0e78c88b6cee6d4c7ede65045c3" alt="Catch These Vibes">
+					</div>
+					<div class="credits">
+						<h5 class="title">Catch These Vibes</h5>
+						<h6 class="artist">Album &middot; by PnB Rock</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img style="border-radius: 50%;" src="https://i.scdn.co/image/34a52aea7e7e3a194df14ce5ca5632d1c09e4dfe" alt="Sum 41">
+					</div>
+					<div class="credits">
+						<h5 class="title">Sum 41</h5>
+						<h6 class="artist">Artist</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/1d7afc2f1f484ca7b925a845e9a95b21b360b010" alt="Phantoms">
+					</div>
+					<div class="credits">
+						<h5 class="title">Phantoms</h5>
+						<h6 class="artist">Album &middot; by Acceptance</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/f89c1ecdd0cc5a23d5ad7303d4ae231d197dde98" alt="OK Computer">
+					</div>
+					<div class="credits">
+						<h5 class="title">OK Computer</h5>
+						<h6 class="artist">Album &middot; by Radiohead</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/c58462a34ee5a6eac9d8ca01f86c5b79c6f334b3" alt="Put Yourself Back Together">
+					</div>
+					<div class="credits">
+						<h5 class="title">Put Yourself Back Together</h5>
+						<h6 class="artist">Album &middot; by Real Friends</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/d68defc78c8c70b3fb733e8ac9892cd0455fdddc" alt="Flower Boy">
+					</div>
+					<div class="credits">
+						<h5 class="title">Flower Boy</h5>
+						<h6 class="artist">Album &middot; by Tyler, The Creator</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/9cd1e492e818ce51638a89e912a6b5eb064fa8dc" alt="Stranger">
+					</div>
+					<div class="credits">
+						<h5 class="title">Stranger</h5>
+						<h6 class="artist">Album &middot; by Yung Lean</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img style="border-radius: 50%;" src="https://i.scdn.co/image/13046946d2c18d7dfbe16f2fc68b3afdfe3bf0e0" alt="Zack Villere">
+					</div>
+					<div class="credits">
+						<h5 class="title">Zack Villere</h5>
+						<h6 class="artist">Artist</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/3b7d4c283e6144754479cc84320bf1341e803219" alt="Beautiful Thugger Girls">
+					</div>
+					<div class="credits">
+						<h5 class="title">Beautiful Thugger Girls</h5>
+						<h6 class="artist">Album &middot; by Young Thug</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+				<div class="album">
+					<div class="cover">
+						<img src="https://i.scdn.co/image/df663dff132515c179cd11c8ea25c533e45cce63" alt="They're Only Chasing Safety">
+					</div>
+					<div class="credits">
+						<h5 class="title">They're Only Chasing Safety</h5>
+						<h6 class="artist">Album &middot; by Underoath</h6>
+					</div>
+					<i id="arrow-icon" class="fas fa-chevron-right"></i>
+				</div>
+			</section>
+		</main>	
+		
+		<footer>
+			<div id="current-playing">
+				<div id="time-status"></div>
+				
+				<div id="playing">
+					<i class="fas fa-chevron-up"></i>
+					<div id="song">
+						<h6>She Will Be Loved - Radio Mix &middot; <span id="artist-playing">by Maroon 5</span></h6>
+						<p><i class="fas fa-headphones"></i> Devices Available</p>
+					</div>
+					<i id="pause-btn" class="far fa-pause-circle"></i>
+				</div>
+			</div>
+			
+			<div id="footer-nav">
+				<div>
+					<i class="fas fa-home"></i>
+					<p>Home</p>
+				</div>
+				<div>
+					<i class="far fa-folder-open"></i>
+					<p>Browse</p>
+				</div>
+				<div>
+					<i class="fas fa-search"></i>
+					<p>Search</p>
+				</div>
+				<div>
+					<i class="fas fa-broadcast-tower"></i>
+					<p>Radio</p>
+				</div>
+				<div id="active">
+					<i class="fas fa-book-open"></i>
+					<p>Your Library</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
